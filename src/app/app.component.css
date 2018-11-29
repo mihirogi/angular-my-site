@@ -1,3 +1,11 @@
 .ui.segment {
   color: black;
 }
+
+.ui.segment {
+  height: 100%;
+}
+
+.text.container{
+  height: 80%;
+}
