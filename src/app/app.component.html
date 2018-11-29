@@ -1,10 +1,18 @@
-<h2>{{title}}</h2>
-<nav>
-  <ul>
-    <li><a routerLink="/profile">Profile</a></li>
-    <li><a routerLink="/art">Art</a></li>
-    <li><a routerLink="/develop">Develop</a></li>
-  </ul>
-</nav>
-<hr/>
-<router-outlet></router-outlet>
+<div class="ui grid">
+  <div class="sixteen wide grey column">
+    <h2>{{title}}</h2>
+  </div>
+  <div class="sixteen wide grey column">
+    <div class="ui three item pointing inverted menu">
+      <a class="item" routerLinkActive="active yellow " routerLink="/profile">Profile</a>
+      <a class="item" routerLinkActive="active yellow " routerLink="/art">Art</a>
+      <a class="item" routerLinkActive="active yellow " routerLink="/develop">Develop</a>
+    </div>
+  </div>
+  <div class="sixteen wide grey column">
+    <div class="ui segment">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
