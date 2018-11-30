@@ -1,12 +1,9 @@
-.ui.segment {
-  color: black;
-  /*background-color: #85b7d9;*/
-}
-
-.ui.segment {
+.text.container{
   height: 100%;
 }
 
-.text.container{
-  height: 80%;
+.ui.segment {
+  color: black;
+  /*background-color: #85b7d9;*/
+  height: 85%;
 }
