@@ -8,8 +8,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 export class ArtComponent implements OnInit {
 
-  private url = 'https://dozhzq3im0.execute-api.ap-northeast-1.amazonaws.com/dev/arts';
-  private response;
+  private getArtsEndpoint = 'https://wqlli8vwj9.execute-api.ap-northeast-1.amazonaws.com/dev/arts';
+  private arts;
 
   private httpOptions = {
     headers: new HttpHeaders({
@@ -25,10 +25,10 @@ export class ArtComponent implements OnInit {
   }
 
   getArt() {
-    this.http.get(this.url, this.httpOptions).subscribe(
+    this.http.get(this.getArtsEndpoint, this.httpOptions).subscribe(
       res => {
-        console.log('response:');
         console.log(res);
+        this.arts = res['message'];
       }
     );
   }
