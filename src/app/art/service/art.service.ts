@@ -9,12 +9,18 @@ import { Art } from '../art';
 })
 export class ArtService {
 
-  private url = 'https://scrapbox.io/api/pages/art-mihirogi/';
+  private getArtsEndpoint = 'https://wqlli8vwj9.execute-api.ap-northeast-1.amazonaws.com/dev/arts';
+
+  private httpOptions = {
+    headers: new HttpHeaders({
+      'Content-Type': 'application/json',
+    })
+  };
 
   constructor(private http: HttpClient) {
   }
 
-  getArt(): Observable<any[]> {
-    return this.http.get<any[]>(this.url);
+  getArt(): Observable<any> {
+    return this.http.get(this.getArtsEndpoint, this.httpOptions);
   }
 }
