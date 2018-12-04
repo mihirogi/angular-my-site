@@ -1,12 +1,12 @@
 <div *ngIf="arts" class="ui grid art-content">
-  <div *ngFor="let art of arts" class="five wide column">
+  <div *ngFor="let art of arts.message" class="five wide column">
     <div class="ui raised segment">
       <div class="ui violet ribbon label mini">
         {{art.title}}
       </div>
       <div class="ui image">
         <a href="https://scrapbox.io/art-mihirogi/{{art.title}}">
-          <img class="ui big image" src="{{art.url}}" alt="art" />
+          <img class="ui big image" src="{{art.url}}" alt="art"/>
         </a>
       </div>
     </div>

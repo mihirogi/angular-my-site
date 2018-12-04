@@ -1,3 +1,4 @@
 export class Art {
-  artUrl: string;
+  title: String;
+  images: String;
 }

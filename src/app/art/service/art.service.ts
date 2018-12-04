@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Art } from '../art';
+import { Message } from '../message';
 
 
 @Injectable({
@@ -20,7 +20,7 @@ export class ArtService {
   constructor(private http: HttpClient) {
   }
 
-  getArt(): Observable<any> {
-    return this.http.get(this.getArtsEndpoint, this.httpOptions);
+  getArt(): Observable<Message> {
+    return this.http.get<Message>(this.getArtsEndpoint, this.httpOptions);
   }
 }
