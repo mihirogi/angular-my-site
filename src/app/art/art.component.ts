@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { ArtService } from './service/art.service';
+import { Art } from './art';
+import { Message } from './message';
 
 @Component({
   selector: 'app-art',
@@ -7,9 +11,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ArtComponent implements OnInit {
 
-  constructor() { }
+  private arts: Message;
 
-  ngOnInit() {
+  constructor(private http: HttpClient, private artService: ArtService) {
   }
 
+  ngOnInit() {
+    this.artService.getArt().subscribe(
+      response => {
+        this.arts = response;
+      }
+    );
+  }
 }
