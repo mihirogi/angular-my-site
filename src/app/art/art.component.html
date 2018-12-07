@@ -1,105 +1,13 @@
-<div class="ui grid art-content">
-  <div class="five wide column">
+<div *ngIf="arts" class="ui grid art-content">
+  <div *ngFor="let art of arts.message" class="five wide column">
     <div class="ui raised segment">
-      <div class="ui violet ribbon label mini">2018/11/23</div>
-      <div class="ui image">
-        <a href="https://scrapbox.io/art-mihirogi/20181122"><img class="ui big image" src="https://gyazo.com/1a3e545da000b56f2054793ca900b305/raw" alt="art" /></a>
+      <div class="ui violet ribbon label mini">
+        {{art.title}}
       </div>
-    </div>
-  </div>
-  <div class="five wide column">
-    <div class="ui raised segment">
-      <div class="ui violet ribbon label mini">2018/11/23</div>
       <div class="ui image">
-        <a href="https://scrapbox.io/art-mihirogi/20181122"><img class="ui big image" src="https://gyazo.com/1a3e545da000b56f2054793ca900b305/raw" alt="art" /></a>
-      </div>
-    </div>
-  </div>
-  <div class="five wide column">
-    <div class="ui raised segment">
-      <div class="ui violet ribbon label mini">2018/11/23</div>
-      <div class="ui image">
-        <a href="https://scrapbox.io/art-mihirogi/20181122"><img class="ui big image" src="https://gyazo.com/1a3e545da000b56f2054793ca900b305/raw" alt="art" /></a>
-      </div>
-    </div>
-  </div>
-  <div class="five wide column">
-    <div class="ui raised segment">
-      <div class="ui violet ribbon label mini">2018/11/23</div>
-      <div class="ui image">
-        <a href="https://scrapbox.io/art-mihirogi/20181122"><img class="ui big image" src="https://gyazo.com/1a3e545da000b56f2054793ca900b305/raw" alt="art" /></a>
-      </div>
-    </div>
-  </div>
-  <div class="five wide column">
-    <div class="ui raised segment">
-      <div class="ui violet ribbon label mini">2018/11/23</div>
-      <div class="ui image">
-        <a href="https://scrapbox.io/art-mihirogi/20181122"><img class="ui big image" src="https://gyazo.com/1a3e545da000b56f2054793ca900b305/raw" alt="art" /></a>
-      </div>
-    </div>
-  </div>
-  <div class="five wide column">
-    <div class="ui raised segment">
-      <div class="ui violet ribbon label mini">2018/11/23</div>
-      <div class="ui image">
-        <a href="https://scrapbox.io/art-mihirogi/20181122"><img class="ui big image" src="https://gyazo.com/1a3e545da000b56f2054793ca900b305/raw" alt="art" /></a>
-      </div>
-    </div>
-  </div>
-  <div class="five wide column">
-    <div class="ui raised segment">
-      <div class="ui violet ribbon label mini">2018/11/23</div>
-      <div class="ui image">
-        <a href="https://scrapbox.io/art-mihirogi/20181122"><img class="ui big image" src="https://gyazo.com/1a3e545da000b56f2054793ca900b305/raw" alt="art" /></a>
-      </div>
-    </div>
-  </div>
-  <div class="five wide column">
-    <div class="ui raised segment">
-      <div class="ui violet ribbon label mini">2018/11/23</div>
-      <div class="ui image">
-        <a href="https://scrapbox.io/art-mihirogi/20181122"><img class="ui big image" src="https://gyazo.com/1a3e545da000b56f2054793ca900b305/raw" alt="art" /></a>
-      </div>
-    </div>
-  </div>
-  <div class="five wide column">
-    <div class="ui raised segment">
-      <div class="ui violet ribbon label mini">2018/11/23</div>
-      <div class="ui image">
-        <a href="https://scrapbox.io/art-mihirogi/20181122"><img class="ui big image" src="https://gyazo.com/1a3e545da000b56f2054793ca900b305/raw" alt="art" /></a>
-      </div>
-    </div>
-  </div>
-  <div class="five wide column">
-    <div class="ui raised segment">
-      <div class="ui violet ribbon label mini">2018/11/23</div>
-      <div class="ui image">
-        <a href="https://scrapbox.io/art-mihirogi/20181122"><img class="ui big image" src="https://gyazo.com/1a3e545da000b56f2054793ca900b305/raw" alt="art" /></a>
-      </div>
-    </div>
-  </div>
-  <div class="five wide column">
-    <div class="ui raised segment">
-      <div class="ui violet ribbon label mini">2018/11/23</div>
-      <div class="ui image">
-        <a href="https://scrapbox.io/art-mihirogi/20181122"><img class="ui big image" src="https://gyazo.com/1a3e545da000b56f2054793ca900b305/raw" alt="art" /></a>
-      </div>
-    </div>
-  </div>
-  <div class="five wide column">
-    <div class="ui raised segment">
-      <div class="ui violet ribbon label mini">2018/11/23</div>
-      <div class="ui image">
-        <a href="https://scrapbox.io/art-mihirogi/20181122"><img class="ui big image" src="https://gyazo.com/1a3e545da000b56f2054793ca900b305/raw" alt="art" /></a>
-      </div>
-    </div>
-  </div>
-  <div class="five wide column">
-    <div class="ui raised segment">
-      <div class="ui violet ribbon label mini">2018/11/23</div>
-      <div class="ui image">
-        <a href="https://scrapbox.io/art-mihirogi/20181122"><img class="ui big image" src="https://gyazo.com/1a3e545da000b56f2054793ca900b305/raw" alt="art" /></a>
+        <a href="https://scrapbox.io/art-mihirogi/{{art.title}}">
+          <img class="ui big image" src="{{art.url}}" alt="art"/>
+        </a>
       </div>
     </div>
   </div>
