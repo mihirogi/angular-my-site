@@ -22,3 +22,12 @@
   height: 4px;
   background: linear-gradient(to right, #f5d500, transparent);
 }
+
+a {
+  color: #f29549;
+}
+
+p {
+  margin-left: 2em;
+  margin-bottom: 0px;
+}
