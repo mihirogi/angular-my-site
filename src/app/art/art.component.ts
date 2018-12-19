@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { ArtService } from './service/art.service';
-import { Art } from './art';
 import { Message } from './message';
 
 @Component({
@@ -11,7 +10,7 @@ import { Message } from './message';
 })
 export class ArtComponent implements OnInit {
 
-  private arts: Message;
+  arts: Message;
 
   constructor(private http: HttpClient, private artService: ArtService) {
   }
