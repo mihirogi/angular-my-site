@@ -1,7 +1,7 @@
 ## Preparation
 
 ```
-git clone https://github.com/mihirogi/scrapbox-lambda.git
+git clone https://github.com/mihirogi/angular-my-site.git
 cd angular-my-site/
 npm install
 cd semantic
@@ -10,10 +10,10 @@ cd ..
 ng serve --open
 ```
 
-## deploy
+## Deploy
 
 ```
 cd angular-my-site/
-ng build
+ng build --prod
 sls deploy -v
 ```
