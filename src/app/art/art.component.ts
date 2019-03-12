@@ -9,17 +9,13 @@ import { Message } from './message';
   styleUrls: ['./art.component.css']
 })
 export class ArtComponent implements OnInit {
-
   arts: Message;
 
-  constructor(private http: HttpClient, private artService: ArtService) {
-  }
+  constructor(private http: HttpClient, private artService: ArtService) {}
 
   ngOnInit() {
-    this.artService.getArt().subscribe(
-      response => {
-        this.arts = response;
-      }
-    );
+    this.artService.getArt().subscribe(response => {
+      this.arts = response;
+    });
   }
 }

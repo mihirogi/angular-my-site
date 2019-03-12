@@ -13,15 +13,10 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     ProfileComponent,
     ArtComponent,
-    DevelopComponent,
+    DevelopComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    HttpClientModule,
-  ],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule {
-}
+export class AppModule {}
