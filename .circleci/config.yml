@@ -10,7 +10,7 @@ jobs:
         - circleci
     docker:
       # specify the version you desire here
-      - image: circleci/node:11
+      - image: circleci/node:11-browsers
 
       # Specify service dependencies here if necessary
       # CircleCI maintains a library of pre-built images
