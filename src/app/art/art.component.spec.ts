@@ -1,9 +1,9 @@
-import { async, ComponentFixture, TestBed } from "@angular/core/testing";
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ArtComponent } from "./art.component";
-import { HttpClientModule } from "@angular/common/http";
+import { ArtComponent } from './art.component';
+import { HttpClientModule } from '@angular/common/http';
 
-describe("ArtComponent", () => {
+describe('ArtComponent', () => {
   let component: ArtComponent;
   let fixture: ComponentFixture<ArtComponent>;
 
@@ -20,7 +20,7 @@ describe("ArtComponent", () => {
     fixture.detectChanges();
   });
 
-  it("should create", () => {
+  it('should create', () => {
     expect(component).toBeTruthy();
   });
 });
