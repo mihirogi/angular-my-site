@@ -28,16 +28,8 @@ resources:
           Statement:
             - Sid: PublicReadGetObject
               Effect: Allow
-              Principal: "*"
+              Principal: '*'
               Action:
-              - s3:GetObject
+                - s3:GetObject
               Resource:
-                Fn::Join: [
-                  "", [
-                    "arn:aws:s3:::",
-                    {
-                      "Ref": "StaticSite"
-                    },
-                    "/*"
-                  ]
-                ]
+                Fn::Join: ['', ['arn:aws:s3:::', { 'Ref': 'StaticSite' }, '/*']]

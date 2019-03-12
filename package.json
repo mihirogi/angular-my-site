@@ -6,11 +6,11 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
-    "test-headless" : "ng test --watch=false --browsers=ChromeHeadless",
+    "test-headless": "ng test --watch=false --browsers=ChromeHeadless",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "format:check": "npx prettier --check \"src/**/*{.html,.css,.ts}\"",
-    "format": "npx prettier --write \"src/**/*{.html,.css,.ts}\""
+    "format:check": "npx prettier --list-different \"{*.json,*.yml,src/**/*{.html,.css,.ts}}\"",
+    "format": "npx prettier --write \"{*.json,*.yml,src/**/*{.html,.css,.ts}}\""
   },
   "private": true,
   "dependencies": {
