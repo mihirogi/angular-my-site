@@ -1,4 +1,4 @@
-@import "../semantic/dist/semantic.min.css";
+@import "../node_modules/semantic-ui-css/semantic.min.css";
 
 html body{
   height: 100%;
