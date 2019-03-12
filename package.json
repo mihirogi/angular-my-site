@@ -8,7 +8,9 @@
     "test": "ng test",
     "test-headless" : "ng test --watch=false --browsers=ChromeHeadless",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "format:check": "npx prettier --check \"src/**/*.ts\"",
+    "format": "npx prettier --write \"src/**/*.ts\""
   },
   "private": true,
   "dependencies": {
