@@ -6,6 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "test": "ng test",
+    "test-headless" : "ng test --watch=false --browsers=ChromeHeadless",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
@@ -22,7 +23,7 @@
     "@angular/router": "~7.0.0",
     "core-js": "^2.5.4",
     "rxjs": "~6.3.3",
-    "semantic-ui": "^2.4.2",
+    "semantic-ui-css": "^2.4.1",
     "zone.js": "~0.8.26"
   },
   "devDependencies": {

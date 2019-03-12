@@ -26,7 +26,7 @@
               "src/styles.css"
             ],
             "scripts": [
-              "semantic/dist/semantic.min.js"
+              "./node_modules/semantic-ui-css/semantic.min.css"
             ]
           },
           "configurations": {
