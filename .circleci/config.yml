@@ -7,7 +7,8 @@ jobs:
   build:
     branches:
       only:
-        - circleci-deploy
+        - master
+        - develop
     docker:
       # specify the version you desire here
       - image: circleci/node:11-browsers
