@@ -46,5 +46,5 @@ jobs:
       # build
       - run: npm run build
       # deploy
-      - run: sls config credentials -k ${AWS_ACCESS_KEY} -s ${AWS_SECRET_KEY} -p aws --stage prod
-      - run: sls deploy
+      - run: sls config credentials -k ${AWS_ACCESS_KEY} -s ${AWS_SECRET_KEY} -p aws
+      - run: sls deploy --stage prod
