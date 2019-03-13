@@ -31,7 +31,10 @@ jobs:
             - v1-dependencies-
 
       - run: npm install
-
+      - run:
+          name: Install Serverless CLI and dependencies
+          command: |
+            sudo npm i -g serverless
       - save_cache:
           paths:
             - node_modules
@@ -41,3 +44,8 @@ jobs:
       - run: npm run format:check
       # run tests!
       - run: npm run test-headless
+      # build
+      - run: npm run build
+      # deploy
+      - run: sls config credentials -k ${AWS_ACCESS_KEY} -s ${AWS_SECRET_KEY} -p aws
+      - run: sls deploy --stage prod
