@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-my-site": {
+    "my-website": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-my-site",
+            "outputPath": "dist/my-website",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -52,18 +52,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-my-site:build"
+            "browserTarget": "my-website:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-my-site:build:production"
+              "browserTarget": "my-website:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-my-site:build"
+            "browserTarget": "my-website:build"
           }
         },
         "test": {
@@ -87,7 +87,7 @@
         }
       }
     },
-    "angular-my-site-e2e": {
+    "my-website-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -96,11 +96,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-my-site:serve"
+            "devServerTarget": "my-website:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-my-site:serve:production"
+              "devServerTarget": "my-website:serve:production"
             }
           }
         },
@@ -114,5 +114,5 @@
       }
     }
   },
-  "defaultProject": "angular-my-site"
+  "defaultProject": "my-website"
 }
