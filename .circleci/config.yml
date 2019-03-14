@@ -35,7 +35,7 @@ jobs:
     working_directory: ~/repo
     steps:
       - attach_workspace: # workspaceをアタッチする
-        at: .
+          at: .
       - run:
           name: check format
           command: npm run format:check
