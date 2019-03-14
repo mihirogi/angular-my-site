@@ -47,6 +47,7 @@ jobs:
       docker:
         - image: circleci/node:11-browsers
       working_directory: ~/repo
+      steps:
       - run:
           name: create aws credentials
           command: sls config credentials -k ${AWS_ACCESS_KEY} -s ${AWS_SECRET_KEY} -p aws
